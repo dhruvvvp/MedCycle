@@ -1,2 +1,2 @@
-# Medstang
+# MedCycle
 Hack Western X - Hack
