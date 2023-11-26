@@ -57,12 +57,14 @@
   .column-left h1 {
     margin-bottom: 1rem;
     font-size: 3rem;
+    text-align: center;
   }
   
   .column-left p {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 1.5;
+    text-align: center;
   }
   
   button {
@@ -73,6 +75,7 @@
     background: #c54545;
     cursor: pointer;
     border-radius: 50px;
+    transform: translate(200px,0px);
   }
   
   button:hover {
