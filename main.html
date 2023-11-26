@@ -33,17 +33,9 @@
 
           <script>
               var getStartedButton = document.getElementById('redirectButton');
-          
               // Add a click event listener to the button
               getStartedButton.addEventListener('click', function() {
-                  // Get the current port number from the window location
-                  var currentPort = window.location.port;
-          
-                  // Build the new URL with the current port for redirection
-                  var redirectURL = 'http://127.0.0.1:' + currentPort + '/Western Hack/MedCycle/Getstarted/GetStarted.html';
-          
-                  // Redirect to the new URL
-                  window.location.href = redirectURL;
+                  window.location.href = '/MedCycle/Getstarted/GetStarted.html';
               });
           </script>
           
