@@ -21,7 +21,22 @@
         <div class="column-left">
           <h1>An easy way to remember your mestrual cycle.</h1>
           <p> SMS reminders & Nutrition reccomendations</p> 
-          <button>Continue</button>
+          <body>
+
+            <button id="redirectButton">Get Started</button>
+            
+            <script>
+                // Get the button element by its id
+                var button = document.getElementById('redirectButton');
+            
+                // Add a click event listener to the button
+                button.addEventListener('click', function() {
+                    // Redirect to another HTML page
+                    window.location.href = 'http://www.google.com';
+                });
+            </script>
+            
+            </body>
         </div>
         <div class="column-right">
           <img
@@ -44,12 +59,14 @@
     </section>
 
     <footer>
+      
       <div class="footer-content">
         <p class="footer-title">&copy; 2023 MedCycle. All rights reserved.</p>
         <a href="/terms" class="footer-button">Terms of Service</a>
         <a href="/privacy" class="footer-button">Privacy Policy</a>
         <a href="/contact" class="footer-button">Contact Us</a>
         <a href="/faq" class="footer-button">FAQ</a>
+
       </div>
     </footer>
   </body>
