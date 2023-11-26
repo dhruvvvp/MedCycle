@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: #016064;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+}
+
+nav a:hover {
+    color: #c54545;
+    border-bottom: 3px solid #c54545;
+}
+
+.calendar {
+    background: #48AAAD;
+}
+
+.calendar-content {
+    display: flex;
+    /* justify-content: center; Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    height: 83.5vh;
+}
+
+.grid {
+    background: #ffffff; /* Set the background color of the box */
+    border-radius: 8px; /* Adjust the border-radius for rounded edges */
+    padding: 5px; /* Add padding as needed */
+    width: 125vh;
+    height: 80vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Create 7 equal columns */
+    gap: 10px; /* Adjust the gap between cells as needed */
+}
+
+/* .month {
+    background: #c54545;
+    border-radius: 4px;
+    margin: 2px;
+    box-sizing: border-box;
+    width:120vh;
+    height: 50px;
+    text-align: center;
+    border: 1px solid;
+} */
+
+.day {
+    background: #016064;
+    border-radius: 4px;
+    margin: 1px;
+    box-sizing: border-box;
+    width: 15.7vh; 
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    transform: translate(0px, 55px);
+}
+
+.date {
+    background: #EEEEEE;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 15.7vh;
+    border: 1px solid #ccc;
+    transform: translate(3px, -12px);
+}
+
+.date2 {
+    background: #f5f2f2a0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 15.7vh;
+    transform: translate(3px, -12px);
+}
+
+.cycles {
+    background: #48AAAD;
+}
+
+.cycle-phases {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    height: 43.5vh;
+}
+
+.phase {
+    background: #c5c6d076; /* Set the background color of the box */
+    border-radius: 15px; /* Adjust the border-radius for rounded edges */
+    padding: 5px; /* Add padding as needed */
+    width: 50vh;
+    height: 40vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+footer {
+    background-color: #016064;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+}
+
+.footer-title {
+    grid-column: span 4;
+    font-weight: bold;
+}
+
+.footer-button {
+    background-color: #c54545;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.footer-button:hover {
+    background: #fff;
+    color: #c54545;
+}
+
+.logo {
+    margin-left: -833.5px; /* Adjust the value as needed */
+}
