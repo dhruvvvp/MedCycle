@@ -34,13 +34,50 @@ nav a:hover {
     border-bottom: 3px solid #c54545;
 }
 
-.questions {
+.calender {
     background: #48AAAD;
 }
 
-.questions-container {
+.calender-content {
     display: flex;
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Center the items vertically */
     height: 43.5vh;
+}
+
+footer {
+    background-color: #016064;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+}
+
+.footer-title {
+    grid-column: span 4;
+    font-weight: bold;
+}
+
+.footer-button {
+    background-color: #c54545;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.footer-button:hover {
+    background: #fff;
+    color: #c54545;
+}
+
+.logo {
+    margin-left: -834.5px; /* Adjust the value as needed */
 }
