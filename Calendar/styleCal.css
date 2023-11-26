@@ -73,7 +73,8 @@ nav a:hover {
 } */
 
 .day {
-    background: #016064;
+    color: #fff;
+    background: #48AAAD;
     border-radius: 4px;
     margin: 1px;
     box-sizing: border-box;
