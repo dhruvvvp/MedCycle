@@ -9,32 +9,42 @@
     
     <body>
         <nav>
+            <img src="medcyclelogo.png"
+            alt="MedCycle Logo" 
+            style="object-fit: contain; width: 80px; height: auto; transform: translate(-60px, 0px);"
+            class="logo-img" />
             <div class="logo">MedCycle</div>
             <div class="nav-items">
-                <body>
-                    <button id="backHome">Home</button>
-                    <script>
-                        // Get the button element by its id
-                        var homebut = document.getElementById('backHome');
-
-                        // Add a click event listener to the button
-                        let port = location.port;
-                        homebut.addEventListener('click', function() {
-                            // Redirect to another HTML page
-                            window.location.href = 'http://127.0.0.1:' + port +'/MedCycle/main.html';
-                        });
-                    </script>
-                </body>
+                <a href="/MedCycle/main.html">Home</a>
                 <a href="/">About Us</a> 
                 <a href="/">Contact</a>
             </div>
         </nav>
 
         <section class="questions">
-            <h2>Let Us Know More...</h2>
             <div class="questions-container">
-                <div class="questions-float">
-                    
+                <div class="question-box1">
+                    Let Us Know More
+                </div>
+                <div class="question-box2">
+                    Let Us Know More
+                </div>
+                <div class="question-box3">
+                    Let Us Know More
+                </div>
+            </div>
+        </section>
+
+        <section class="questions2">
+            <div class="questions-container2">
+                <div class="question-box4">
+                    Let Us Know More
+                </div>
+                <div class="question-box5">
+                    Let Us Know More
+                </div>
+                <div class="question-box6">
+                    Let Us Know More
                 </div>
             </div>
         </section>
