@@ -38,12 +38,34 @@ nav a:hover {
 }
 
 .questions-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
     height: 95vh;
-    padding: 3rem calc((100vw - 1300px) / 2);
 }
 
+.question-box1 {
+    background: #ffffff; /* Set the background color of the box */
+    border-radius: 15px; /* Adjust the border-radius for rounded edges */
+    padding: 5px; /* Add padding as needed */
+    width: 50vh;
+    height: 80vh;
+}
+
+.question-box2 {
+    background: #ffffff; /* Set the background color of the box */
+    border-radius: 15px; /* Adjust the border-radius for rounded edges */
+    padding: 5px; /* Add padding as needed */
+    width: 50vh;
+    height: 80vh;
+}
+.question-box3 {
+    background: #ffffff; /* Set the background color of the box */
+    border-radius: 15px; /* Adjust the border-radius for rounded edges */
+    padding: 5px; /* Add padding as needed */
+    width: 50vh;
+    height: 80vh;
+}
 
 footer {
     background-color: #016064;
