@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Period Prediction Result</title>
+</head>
+<body>
+    <h1>Next Period Date Prediction for {{ username }}</h1>
+    <p>Predicted next period date: {{ predicted_date }}</p>
+ <form action="/" method="get">
+        <button type="submit">Go Back</button>
+    </form>
+
+    <form action="/sendsms" method="post">
+        <input type="hidden" name="username" value="{{ username }}">
+        <input type="hidden" name="predicted_date" value="{{ predicted_date }}">
+        <input type="hidden" name="recipient_number" value="1234567890"> <!-- Replace with recipient number -->
+        <button type="submit">Click Here To Receive An SMS</button>
+    </form>
+</body>
+</html>

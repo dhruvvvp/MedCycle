@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MedCycle</title>
+</head>
+<body>
+    <h1>MedCycle</h1>
+    <form action="/predict" method="post">
+        <label for="username">Enter your username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="date1">Enter your most recent period date (YYYY-MM-DD):</label><br>
+        <input type="date" id="date1" name="date1" required><br><br>
+        <label for="date2">Enter the period date before that (YYYY-MM-DD):</label><br>
+        <input type="date" id="date2" name="date2" required><br><br>
+        <label for="weight">Enter your weight (in kilograms):</label><br>
+        <input type="number" id="weight" name="weight" required><br><br>
+        <label for="age">Enter your age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+        <label for="recipient_number">Enter your phone number with the area code (no dashes):</label><br>
+        <input type="text" id="recipient_number" name="recipient_number" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
