@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MedCycle</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
+      <!-- Add an image in the top left of the screen -->
+      <img src="medcyclelogo.png"
+       alt="MedCycle Logo" 
+       style="object-fit: contain; width: 80px; height: auto; transform: translate(-60px, 0px);"
+       class="logo-img" />
+
       <div class="logo">MedCycle</div>
       <div class="nav-items">
         <a href="/">Home</a> 
@@ -21,45 +27,48 @@
         <div class="column-left">
           <h1>An easy way to remember your mestrual cycle.</h1>
           <p> SMS reminders & Nutrition reccomendations</p> 
-          <body>
+          <button id="redirectButton">Get Started</button>
 
-            <button id="redirectButton">Get Started</button>
-            
-            <script>
-                // Get the button element by its id
-                var button = document.getElementById('redirectButton');
-            
-                // Add a click event listener to the button
-                button.addEventListener('click', function() {
-                    // Redirect to another HTML page
-                    window.location.href = 'http://www.google.com';
-                });
-            </script>
-            
-            </body>
+          <script>
+              var getStartedButton = document.getElementById('redirectButton');
+          
+              // Add a click event listener to the button
+              getStartedButton.addEventListener('click', function() {
+                  // Get the current port number from the window location
+                  var currentPort = window.location.port;
+          
+                  // Build the new URL with the current port for redirection
+                  var redirectURL = 'http://127.0.0.1:' + currentPort + '/MedCycle/GetStarted.html';
+          
+                  // Redirect to the new URL
+                  window.location.href = redirectURL;
+              });
+          </script>
+          
+          </body>
         </div>
         <div class="column-right">
           <img
             src="over.png"
-            style="object-fit: contain; width: 500px; height: auto; transform: translate(-80px, 0px);"
+            style="object-fit: contain; width: 500px; height: auto; transform: translate(0px, 0px);"
             alt="Error 404: Image Not Found"
           />
-        </div>
-      </div>
+  
+      
     </section>
 
     <section class="description">
-      <div class="description-content">
-        <h2 style="margin-bottom: 20px;">Description</h2>
-        <p style="margin-bottom: 20px;">
-          MedCycle is a platform that provides SMS reminders for mensural cycles. 
-          We make it easy for you to stay on top of your healthcare schedule.
-        </p>
-      </div>
+        <div class="description-content">
+          <h2 style="margin-bottom: 20px;">Description</h2>
+          <p style="margin-bottom: 20px;">
+            MedCycle is a platform that provides SMS reminders for mensural cycles. 
+            We make it easy for you to stay on top of your healthcare schedule.
+          </p>
+        </div>
     </section>
 
     <footer>
-      
+
       <div class="footer-content">
         <p class="footer-title">&copy; 2023 MedCycle. All rights reserved.</p>
         <a href="/terms" class="footer-button">Terms of Service</a>
