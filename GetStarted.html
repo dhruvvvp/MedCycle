@@ -11,7 +11,20 @@
         <nav>
             <div class="logo">MedCycle</div>
             <div class="nav-items">
-                <a href="/">Home</a> 
+                <body>
+                    <button id="backHome">Home</button>
+                    <script>
+                        // Get the button element by its id
+                        var homebut = document.getElementById('backHome');
+
+                        // Add a click event listener to the button
+                        let port = location.port;
+                        homebut.addEventListener('click', function() {
+                            // Redirect to another HTML page
+                            window.location.href = 'http://127.0.0.1:' + port +'/MedCycle/main.html';
+                        });
+                    </script>
+                </body>
                 <a href="/">Get Started</a> 
                 <a href="/">About Us</a> 
                 <a href="/">Contact</a>
