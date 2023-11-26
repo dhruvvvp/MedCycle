@@ -8,7 +8,13 @@ user_data = {}
 
 # Infobip API credentials and recipient number
 BASE_URL = "https://l3xwd2.api.infobip.com"
-API_KEY = "your_api_key_here"  # Replace with your actual API key
+API_KEY = "1ba151de4fe6dcdcee61261cdfa0c5f8-93fa434f-9d4c-4138-b356-e2577d0494e6"
+
+import os 
+API_KEY = os.environ.get("1ba151de4fe6dcdcee61261cdfa0c5f8-93fa434f-9d4c-4138-b356-e2577d0494e6")
+
+if API_KEY is None:
+    raise ValueError("Infobip API key not found. Set INFOBIP_API_KEY environment variable.")
 
 # Initialize the SMS channel with your Infobip credentials
 channel = SMSChannel.from_auth_params({"base_url": BASE_URL, "api_key": API_KEY})
@@ -18,6 +24,7 @@ dataset_path = 'cycle_data.csv'  # Update this path accordingly
 dataset = pd.read_csv(dataset_path, sep=';')
 
 @app.route('/')
+
 def index():
     return render_template('index.html')
 
@@ -72,9 +79,12 @@ def predict():
 
         print("SMS sent successfully!")
     except Exception as e:
-        print(f"Error sending SMS: {str(e)}")
+        error_message = f"Error sending SMS: {str(e)}"
+        print(error_message)
+        return render_template('error.html', error_message=error_message)
 
     return render_template('result.html', username=username, predicted_date=predicted_next_period.date())
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
