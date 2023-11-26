@@ -30,7 +30,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #fff;
+    color: #c54545;
+    border-bottom: 3px solid #c54545;
 }
 
 .questions {
@@ -41,7 +42,7 @@ nav a:hover {
     display: flex;
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Center the items vertically */
-    height: 95vh;
+    height: 43.5vh;
 }
 
 .question-box1 {
@@ -49,8 +50,11 @@ nav a:hover {
     border-radius: 15px; /* Adjust the border-radius for rounded edges */
     padding: 5px; /* Add padding as needed */
     width: 50vh;
-    height: 80vh;
-    margin: 10px; /* Add margin to create space between the boxes */
+    height: 40vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .question-box2 {
@@ -58,16 +62,22 @@ nav a:hover {
     border-radius: 15px; /* Adjust the border-radius for rounded edges */
     padding: 5px; /* Add padding as needed */
     width: 50vh;
-    height: 80vh;
-    margin: 10px; /* Add margin to create space between the boxes */
+    height: 40vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 .question-box3 {
     background: #ffffff; /* Set the background color of the box */
     border-radius: 15px; /* Adjust the border-radius for rounded edges */
     padding: 5px; /* Add padding as needed */
     width: 50vh;
-    height: 80vh;
-    margin: 10px; /* Add margin to create space between the boxes */
+    height: 40vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .questions2 {
@@ -78,7 +88,7 @@ nav a:hover {
     display: flex;
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Center the items vertically */
-    height: 95vh;
+    height: 43.5vh;
 }
 
 .question-box4 {
@@ -86,8 +96,11 @@ nav a:hover {
     border-radius: 15px; /* Adjust the border-radius for rounded edges */
     padding: 5px; /* Add padding as needed */
     width: 50vh;
-    height: 80vh;
-    margin: 10px; /* Add margin to create space between the boxes */
+    height: 40vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .question-box5 {
@@ -95,16 +108,22 @@ nav a:hover {
     border-radius: 15px; /* Adjust the border-radius for rounded edges */
     padding: 5px; /* Add padding as needed */
     width: 50vh;
-    height: 80vh;
-    margin: 10px; /* Add margin to create space between the boxes */
+    height: 40vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 .question-box6 {
     background: #ffffff; /* Set the background color of the box */
     border-radius: 15px; /* Adjust the border-radius for rounded edges */
     padding: 5px; /* Add padding as needed */
     width: 50vh;
-    height: 80vh;
-    margin: 10px; /* Add margin to create space between the boxes */
+    height: 40vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 footer {
@@ -141,5 +160,5 @@ footer {
 }
 
 .logo {
-    margin-left: -900px; /* Adjust the value as needed */
+    margin-left: -836.5px; /* Adjust the value as needed */
 }

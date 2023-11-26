@@ -30,7 +30,8 @@
   }
   
   nav a:hover {
-    color: #fff;
+    color: #c54545;
+    border-bottom: 3px solid #c54545;
   }
   
   .over {
@@ -149,5 +150,5 @@
   }
 
   .logo {
-    margin-left: -775px; /* Adjust the value as needed */
+    margin-left: -795px; /* Adjust the value as needed */
 }
